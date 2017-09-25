@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Test1SFML" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Headers\;Headers\Entities\;CPP\;CPP\Entities\;CPP\State\;Headers\State\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Test1SFML" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/SFML-2.4.2/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add directory="C:/SFML-2.4.2/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Test1SFML" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/SFML-2.4.2/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add directory="C:/SFML-2.4.2/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="C:/SFML-2.4.2/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="C:/SFML-2.4.2/lib" />
+		</Linker>
+		<Unit filename="Attack.cpp">
+			<Option virtualFolder="CPP/" />
+		</Unit>
+		<Unit filename="BattleState.cpp">
+			<Option virtualFolder="CPP/State/" />
+		</Unit>
+		<Unit filename="BattleState.h">
+			<Option virtualFolder="Headers/State/" />
+		</Unit>
+		<Unit filename="Engine.cpp">
+			<Option virtualFolder="CPP/" />
+		</Unit>
+		<Unit filename="Engine.h">
+			<Option virtualFolder="Headers/" />
+		</Unit>
+		<Unit filename="Entity.cpp">
+			<Option virtualFolder="CPP/Entities/" />
+		</Unit>
+		<Unit filename="Entity.h">
+			<Option virtualFolder="Headers/Entities/" />
+		</Unit>
+		<Unit filename="LevelState.cpp">
+			<Option virtualFolder="CPP/State/" />
+		</Unit>
+		<Unit filename="LevelState.h">
+			<Option virtualFolder="Headers/State/" />
+		</Unit>
+		<Unit filename="Main.cpp">
+			<Option virtualFolder="CPP/" />
+		</Unit>
+		<Unit filename="NPC.h">
+			<Option virtualFolder="Headers/Entities/" />
+		</Unit>
+		<Unit filename="Pokemon.cpp">
+			<Option virtualFolder="CPP/Entities/" />
+		</Unit>
+		<Unit filename="Pokemon.h">
+			<Option virtualFolder="Headers/Entities/" />
+		</Unit>
+		<Unit filename="State.cpp">
+			<Option virtualFolder="CPP/State/" />
+		</Unit>
+		<Unit filename="State.h">
+			<Option virtualFolder="Headers/State/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
